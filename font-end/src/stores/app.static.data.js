@@ -4,7 +4,7 @@ const appMenu = [
 },{
 	url:'/daren',icon:'icon-shoucang',text:'达人'
 },{
-	url:'/discover',icon:'icon-message2',text:'发现'
+	url:'/discover',icon:'icon-message2',text:'消息'
 },{
 	url:'/me',icon:'icon-wode',text:'我的'
 }
