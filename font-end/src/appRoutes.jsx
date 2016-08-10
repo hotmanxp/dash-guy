@@ -3,9 +3,9 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 
 import LayoutCmp from './pages/layout';
 import Home from './pages/home';
-//import ProductList from './pages/product-list';
-//import  ShoppingCar from './pages/shopping-car';
-//import Me from './pages/me';
+import DaRen from './pages/daren';
+import Discover from './pages/discover';
+import Me from './pages/me';
 //import Topic from './pages/topic';
 //import SlickCmp from './pages/codePage';
 
@@ -19,6 +19,9 @@ class AppRoutes  extends React.Component {
             <Router history={hashHistory}>
                 <Route path='/' component={LayoutCmp}>
                 	<IndexRoute component={Home} />
+                	<Route path='daren' component={DaRen} />
+                	<Route path='discover' component={Discover} />
+                	<Route path='me' component={Me} />
                 </Route>
             </Router>
             )

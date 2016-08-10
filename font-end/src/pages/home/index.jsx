@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Page  from '../menu.page';
 import { observer } from 'mobx-react';
 import HomeData from '../../stores/home.model';
 import Banner from '../../components/banner';
@@ -15,7 +15,7 @@ import  appState from '../../stores/app.state';
 
 
 @observer
-class Home extends React.Component {
+class Home extends Page {
     constructor(props) {
         super(props);
         this.displayName = 'Home';
@@ -37,12 +37,8 @@ class Home extends React.Component {
     }
     componentDidMount() {
         appState.topBar.title = '登陆';
-        appState.topBar.rightText = '';
-        appState.topBar.showFlag = true;
+        appState.menu.currentIndex = 0;
        
-       
-       
-        
     }
 }
 

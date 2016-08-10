@@ -1,6 +1,8 @@
 .app-body {
     padding-top: @header-bar-height;
     padding-bottom: @menu-bar-height;
+    overflow-x: hidden;
+    background-color:@body-bg-cl;
     &.no-menu {
         padding-bottom: 0;
     }
@@ -154,6 +156,10 @@
             text-align:center;
             line-height:@px*188;
             color:#fff;
+            .font(28);
+            a{
+                color:#fff;
+            }
         }
     }
     .recommond-part{
@@ -204,6 +210,51 @@
                     top:@px*60;
                     left:50%;
                     margin-left:-100*@px; 
+                }
+            }
+        }
+    }
+}
+
+.daren-page{
+    .list-container{
+        margin-top: @px*20;
+        position:relative;
+        .bigImg{
+            width:100%;
+            height:@px*440;
+            display:block;
+        }
+        .tips{
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:10;
+            background-color:rgba(0,0,0,0.3);
+            width:100%;
+            line-height:50*@px;
+            text-align:center;
+            color:#fff;
+            .font(36);
+        }
+        .smallBox-container{
+            padding: @px*20 @px*15;
+            background-color:#fff;
+            .smallBox{
+                margin: 0 @px*10;
+                img{
+                    display:block;
+                    width:100%;
+                    height:@px*160;
+                }
+                .name{
+                    .font(28);
+                    line-height:@px*50;
+                    color:#2c2c2c;
+                }
+                .detail{
+                    .font(24);
+                    color:#999;
                 }
             }
         }

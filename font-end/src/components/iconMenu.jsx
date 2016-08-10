@@ -5,11 +5,6 @@ import { appMenu } from '../stores/app.static.data';
 import appState from '../stores/app.state';
 
 
-function setCurrentIndex(index){
-    appState.menu.currentIndex = index ;
-}
-
-
 @observer
 class IconMenu extends React.Component {
     constructor(props) {
@@ -38,7 +33,7 @@ class IconMenu extends React.Component {
     
 }
 
-var MenuItem = (props) => (<li className={'flex-1 menu-item' + (props.active?' active':'')+(props.hasNew?' new':'') } onClick={() =>{setCurrentIndex(props.menuIndex)}}>
+var MenuItem = (props) => (<li className={'flex-1 menu-item' + (props.active?' active':'')+(props.hasNew?' new':'') } >
 	<Link to={props.item.url} >
 		<i className={'menu-icon iconfont '+props.item.icon} ></i>
 		<div className='text' >{props.item.text}</div>
