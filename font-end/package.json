@@ -20,7 +20,11 @@
     "release:patch": "npm version patch && npm publish && git push --follow-tags"
   },
   "repository": "",
-  "keywords": ["dashguys","健身","共享经济"],
+  "keywords": [
+    "dashguys",
+    "健身",
+    "共享经济"
+  ],
   "author": "ethan_leong@ qq@6923102",
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -79,6 +83,7 @@
     "react-dom": "^15.0.0",
     "react-router": "^2.6.0",
     "react-slick": "^0.12.2",
-    "superagent": "^2.1.0"
+    "superagent": "^2.1.0",
+    "weui": "^0.4.3"
   }
 }
