@@ -305,13 +305,86 @@
 }
 
 .me-page{
-    .iconfont{
-        vertical-align:-10px;
-        .font(56);
+    .header{
+        text-align:center;
+        padding-bottom:@px*30;
+        background-color:#fff;
+        border: 0.1px solid transparent;
+        .avater{
+            display:block;
+            margin-top:@px*86;
+            width:@px*120;
+            height:@px*120;
+            border-radius:50%;
+            margin-left:auto;
+            margin-right: auto;
+
+        }
+        .username{
+            .font(34);
+            color:#333;
+            line-height:66*@px;
+
+        }
+        .brife{
+            .font(30);
+            color:#999;
+            line-height:1;
+        }
+        .earning-info{
+            line-height:@px*86;
+            .font(28);
+            color:#333;
+            .quest-quantity{
+                color:#fe5a63;
+            }
+            .earning-quantity{
+                color:#25d597;
+            }
+        }
+        .btn{
+            display:inline-block;
+            .font(36);
+            line-height:@px*88;
+            background-color:#00cc99;
+            width:@px*332;
+            border:none;
+            color:#fff;
+            border-radius:5px;
+            margin-bottom:@px*20;
+        }
     }
-    .text{
-        padding-left:0.5em;
-        color:#333;
+    .menuList-container{
+        margin-top:@px*30;
+        .item{
+            height:@px*98;
+            background-color:#fff;
+            margin-bottom:1px;
+            .icon{
+                width:@px*100;
+                padding-left: @px*30;
+                .iconfont{
+                    .font(50);
+                    vertical-align: @px*4;
+                }
+            }
+            .text{
+                .font(32);
+                color:#333;
+            }
+            .right-arrow{
+                padding-right:@px*10;
+                text-align:right;
+                width:@px*100;
+                .iconfont{
+                    .font(42);
+                    display:inline-block;
+                    transform:rotate(-90deg);
+                    color:#999;
+
+                }
+            }
+        }
     }
 }
 
