@@ -9,8 +9,6 @@ import  appState from '../../stores/app.state';
 import HeaderMaster from './header.master';
 import MenuList from './menuList';
 
-
-
 @observer
 class Me extends Page {
     constructor(props) {
