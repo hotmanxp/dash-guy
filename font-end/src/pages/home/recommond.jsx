@@ -16,6 +16,8 @@ class Recommond extends React.Component {
 }
 
 const QList =(props) => (<div className="list-item">
+	<div className='text-container'>
+	<div className='touming'>
 	<div className="question">
 		<span className="keyword">{'#'+props.question.keyword+'#'}</span>
 		
@@ -29,9 +31,13 @@ const QList =(props) => (<div className="list-item">
 		<span>/</span>
 		<span>{props.question.asker}</span>
 	</div>
+	</div>
+	<div className="one-btn btn-base">一元揭开</div>
+	</div>
+
 	<div className="pic-part">
 		<img  src={props.question.imgSrc} className="pic" />
-		<div className="one-btn">一元揭开</div>
+		
 	</div>
 </div>)
 
