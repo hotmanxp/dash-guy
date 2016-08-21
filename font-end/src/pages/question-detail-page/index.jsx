@@ -5,6 +5,7 @@ import Question from './question';
 import Open from './open';
 import MasterInfo from './master.info';
 import SimilarQuestion from './similar';
+import NotAnswer from './not-answer';
 
 class QuestionDetail extends Page {
     constructor(props) {
@@ -16,6 +17,7 @@ class QuestionDetail extends Page {
             <Question />
             <Open />
             <MasterInfo />
+            <NotAnswer btnType='wait'/>
             <SimilarQuestion />
         </div>;
     }

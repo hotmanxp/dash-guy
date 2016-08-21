@@ -409,6 +409,10 @@
     color:#5890cd;
     padding-right:1em;
 }
+.section{
+    margin-top:@px*20;
+    background-color:#fff;
+}
 .question-detail-page{
     .question-part{
         background-color:#fff;
@@ -539,6 +543,38 @@
             .font(32);
             color:#333;
             border-bottom:1px solid #e3e3e3;
+        }
+    }
+    .not-answer-part{
+        height:@px*328;
+        padding-top:@px*70;
+        text-align:center;
+        .tips{
+            line-height:38*@px;
+            .font(28);
+            color:#999;
+        }
+        .btn{
+            display:block;
+            width:320*@px;
+            line-height:@px*88;
+            text-align: center;
+            color:#fff;
+            background-color:#00cc99;
+            .font(32);
+            margin:0 auto;
+            margin-top:@px*25;
+            border-radius:5px; 
+        }
+    }
+}
+
+.article-detail-page{
+    .title-part{
+        padding:@px*30 @px*30 0;
+        .title{
+            .font(46);
+            color:#2c2c2c;
         }
     }
 }
