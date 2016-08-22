@@ -572,9 +572,42 @@
 .article-detail-page{
     .title-part{
         padding:@px*30 @px*30 0;
+
         .title{
             .font(46);
             color:#2c2c2c;
+        }
+        .info{
+            font-family: 'microsoft yahei', '微软雅黑';
+             border-bottom:1px solid #e3e3e3;
+             padding:@px*10 0;
+
+             .pic{
+                display:block;
+                width:@px*84;
+                height:@px*84;
+                border-radius:50%;
+             }
+             .text{
+                 color:#666;
+                .font(30);
+                padding-left:0.5em;
+             }
+
+        }
+    }
+    .content-part{
+        padding:@px*30;
+        p{
+            text-indent: 2em;
+            line-height:1.6;
+            color:#2c2c2c;
+            .font(34);
+            padding-bottom:@px*20;
+        }
+        img{
+            width:100%;
+            display:block;
         }
     }
 }

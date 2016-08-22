@@ -14,12 +14,12 @@ class Title extends React.Component {
         		<h3 className='title'>
         			{acticle.title}
         		</h3>
-        		<div className='display-flex'>
+        		<div className='display-flex info align-items-center'>
         			<div className='avater'>
         				<img className='pic' src={acticle.avater} />
         			</div>
-        			<div className=''>{acticle.author}</div>
-        			<div>{acticle.publistTime}</div>
+        			<div className='text'>{acticle.author}</div>
+        			<div className='text'>{acticle.publistTime}</div>
         		</div>
         	</div>
         </div>;
