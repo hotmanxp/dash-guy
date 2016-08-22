@@ -90,4 +90,13 @@ const messageListData = [
 },
 ]
 
-export { indexBannerList, indexQuestionList, darenBannerList, darenListData, messageListData };
+const newhandListData = [
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'},
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'},
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'},
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'},
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'}
+]
+
+export { indexBannerList, indexQuestionList, darenBannerList, darenListData, messageListData,
+newhandListData };

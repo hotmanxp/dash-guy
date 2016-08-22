@@ -8,6 +8,7 @@ import Discover from './pages/discover';
 import Me from './pages/me';
 import QuestionDetailPage from './pages/question-detail-page';
 import ArticleDetail from './pages/article-detail-page';
+import Newhand from './pages/new-hand';
 //import Topic from './pages/topic';
 //import SlickCmp from './pages/codePage';
 
@@ -20,11 +21,14 @@ class AppRoutes  extends React.Component {
         return (
             <Router history={hashHistory}>
                 <Route path='/' component={LayoutCmp}>
-                	<IndexRoute component={ArticleDetail} />
+                	<IndexRoute component={Newhand} />
                     <Route path='home' component={Home} />
                 	<Route path='daren' component={DaRen} />
                 	<Route path='discover' component={Discover} />
                 	<Route path='me' component={Me} />
+                    <Route path='question-detail' component={QuestionDetailPage} />
+                    <Route path='article-detail' component={ArticleDetail} />
+                    <Route path='new-hand' component={Newhand} />
                 </Route>
             </Router>
             )
