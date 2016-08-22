@@ -610,4 +610,100 @@
             display:block;
         }
     }
+    .share-part{
+        .icon-block{
+            padding:@px*20 @px*100;
+            .item{
+                text-align:center;
+                i{
+                    display:inline-block;
+                    width:@px*100;
+                    height:@px*100;
+                    border-radius:50%;
+                    line-height:@px*100;
+                    color:#fff;
+                    .font(70);
+                }
+                .youyong{
+                    background-color:#00cc99;
+                }
+                .share{
+                    background-color:#fe5a63;
+                }
+                .quantity{
+                    color:#2c2c2c;
+                    .font(28);
+                    line-height:@px*70;
+                }
+            }
+        }
+    }
+    .comment-part{
+        
+        .header{
+            padding:0 @px*30;
+            .font(28);
+        }
+        .left{
+            float: left;
+            color:#00cc99;
+        }
+        .right{
+            float:right;
+            color:#2c2c2c;
+        }
+        .list-container{
+            background-color:#fff;
+             padding:0 @px*30;
+            .comment-item{
+                padding-bottom:@px*10;
+                &:not(:last-child) {border-bottom:1px solid #e3e3e3;} 
+                .avater{
+                    img{
+                        display:block;
+                        width:@px*60;
+                        height:@px*60;
+                        border-radius:50%;
+                    }
+
+                }
+                .detail{
+                    padding-left: @px*20;
+                    .user-name{
+                        .font(30);
+                        color:#666;
+                    }
+                    .time{
+                        .font(22);
+                        color:#999;
+                    }
+                }
+                .answer{
+                    .font(28);
+                    color:#2c2c2c;
+                }
+            }
+            .comment-text{
+                .font(32);
+                color:#2c2c2c;
+                padding-left: 80*@px;
+            }
+            .ref{
+                background-color:#f2f2f2;
+                margin-left: 80*@px;
+                margin-right:@px*30;
+                padding:@px*10 ;
+                .username{
+                    color:#56abe4;
+                    .font(30);
+                    line-height:@px*60;
+                }
+                .text{
+                    .font(32);
+                    color:#2c2c2c;
+                }
+            }
+
+        }
+    }
 }

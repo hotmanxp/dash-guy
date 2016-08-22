@@ -2,7 +2,8 @@ import React from 'react';
 import Page from '../single.page';
 import Title from './title';
 import Content from './content';
-import Share from './share';;
+import Share from './share';
+import Comment from './comment';
 import appState from '../../stores/app.state';
 import Article from '../../stores/article.detail.store';
 import { observer } from 'mobx-react';
@@ -16,10 +17,11 @@ class ArticleDetail extends Page {
     }
     render() {
     	let article = this.article.article;
-        return <div className='app-body article-detail-page'>
+        return <div className='app-body no-menu article-detail-page'>
         	<Title data={article} />
             <Content data={article} />
             <Share data={article} />
+            <Comment data={article} />
         </div>;
     }
     componentDidMount() {
