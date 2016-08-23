@@ -6,6 +6,7 @@ import Banner from '../../components/banner';
 import SortMenus from './sort-menu';
 import BlockMenus from './block-menu';
 import Recommond from './recommond';
+import DocumentTitle  from 'react-document-title';
 
 
 
@@ -23,7 +24,7 @@ class Home extends Page {
     }
     render() {
         return <div className="home-page">
-        	
+        	<DocumentTitle title='大师' ></DocumentTitle>
         	<div className="app-body">
                 <Banner data={this.homeData.indexBannerList} />
                <SortMenus />

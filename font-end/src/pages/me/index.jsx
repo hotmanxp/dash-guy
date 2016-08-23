@@ -8,6 +8,7 @@ import ToastDone from '../../components/toast.done';
 import  appState from '../../stores/app.state';
 import HeaderMaster from './header.master';
 import MenuList from './menuList';
+import DocumentTitle from 'react-document-title';
 
 @observer
 class Me extends Page {
@@ -19,6 +20,7 @@ class Me extends Page {
     }
     render() {
         return <div className="me-page app-body">
+            <DocumentTitle title='个人资料' ></DocumentTitle>
         	<HeaderMaster />
             <MenuList />
        
