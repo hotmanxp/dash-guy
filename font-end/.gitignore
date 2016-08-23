@@ -34,3 +34,6 @@ bower_components/
 
 # LogFile
 *.log
+
+# DS
+*.DS_Store
