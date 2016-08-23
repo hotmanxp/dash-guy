@@ -98,5 +98,14 @@ const newhandListData = [
 {title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'}
 ]
 
+const keepFitArticleList = [
+	{title:'怎么样练就六块大大的腹肌练就六块大练就六块大?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
+	{title:'怎么样练就六块大大的腹肌练就六块大练就六块大?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
+	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
+	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
+	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
+	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250}
+];
+
 export { indexBannerList, indexQuestionList, darenBannerList, darenListData, messageListData,
-newhandListData };
+newhandListData, keepFitArticleList };

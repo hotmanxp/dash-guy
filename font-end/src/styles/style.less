@@ -828,3 +828,72 @@
     }
 }
 
+//健身攻略
+
+.keep-fit-page{
+    .menu-container{
+        padding:@px*30 @px*20;
+        .menu-item{
+            width: @px*112;
+            height: @px*112;
+            border-radius: 50%;
+            float: left;
+            line-height: @px*112;
+            text-align: center;
+            color: #fff;
+            background-color: @app-blue;
+            .font(28);
+            margin:@px*15;
+            &.green{
+                background-color: @app-green;
+            }
+        }
+    }
+    .article-part{
+        background-color: #fff;
+       .title{
+            padding:0 @px*20;
+            border-bottom: 1px solid #e3e3e3;
+            line-height: @px*88;
+       }
+       .item{
+           padding: @px*10 0;
+           border-bottom: 1px solid #e3e3e3;
+       }
+       .thumb{
+           padding-left: @px*20;
+           img{
+               display: block;
+               width: @px*142;
+               height: @px*142;
+           }
+       }
+       .info{
+           padding-left:@px*30;
+           .info-part{
+               margin-top:@px*10;
+           }
+           .avater{
+               img{
+                   display: block;
+                   width: @px*52;
+                   height: @px*52;
+                   border-radius: 50%;
+               }
+           }
+           .author{
+               margin-left: @px*15;
+               .font(26);
+               color: #666;
+           }
+           .comments,.zan{
+               color: #666;
+               .font(26);
+               padding:0 @px*10;
+               .iconfont{
+                   .font(30);
+               }
+           }
+       }
+    }
+}

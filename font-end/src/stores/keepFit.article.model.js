@@ -1,14 +1,14 @@
 import { observable } from 'mobx';
-import { newhandListData} from './mockData';
+import { keepFitArticleList} from './mockData';
 
-class NewhandArticle {
+class Articles {
 	@observable articleList = [];
 	
 	
 	
 
 	getArticleList(){
-		this.articleList = newhandListData;
+		this.articleList = keepFitArticleList;
 	}
 
 
@@ -18,4 +18,4 @@ class NewhandArticle {
 }
 
 
-export default NewhandArticle;
+export default Articles;
