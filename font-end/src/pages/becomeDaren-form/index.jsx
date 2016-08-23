@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
 import Page from '../single.page.jsx'
 
+
 const skillList =[
-    {text:'仰卧起坐',id:'skill001',value:'仰卧起座'},
-    {text:'普拉提',id:'skill002',value:'普拉提'},
-    {text:'器械',id:'skill003',value:'器械'},
-    {text:'瑜伽',id:'skill004',value:'瑜伽'},
-    {text:'增肌',id:'skill005',value:'增肌'},
-    {text:'丰胸',id:'skill006',value:'丰胸'},
-    {text:'美臀',id:'skill007',value:'美臀'},
-    {text:'仰卧AA',id:'skill008',value:'仰卧AA'},
-    {text:'仰卧BB',id:'skill009',value:'仰卧BB'},
-    {text:'仰卧尺寸',id:'skill010',value:'仰卧尺寸'},
+    '仰卧起坐','普拉提','器械','瑜伽','增肌','丰胸','美臀','仰卧AA','仰卧BB','仰卧尺寸'
 ];
+
 class DaRenForm extends Page {
     
+    constructor(props) {
+        super(props);
+        this.remainCheck = 3;
+        this.state = {checkboxState:this.initCheckboxState()};
+    }
     render() {
         return (
             <div className='app-body no-menu daren-form-page'>
@@ -41,14 +39,45 @@ class DaRenForm extends Page {
                     <div className='skill-form section'>
                         <p className="tip">擅长：<span>(最多选三个)</span></p>
                         <div className='skill-box cf'>
-                            {skillList.map((item,index) => (<CheckBox data={item} key={index+'skillKey'}/>))}
+                            {skillList.map((item,index) => (<CheckBox changeHook={() => {this.handleCheckChange(index)}} isDisable={this.state.checkboxState[index].isDisabled} text={item} index={index} key={index+'skillKey'}/>))}
                         </div>
+                    </div>
+                    <div className="textarea">
+                        <div className="title">一句话介绍自己</div>
+                        <textarea name="introduce" id="" cols="15" rows="2" maxLength='20'></textarea>
                     </div>
                     <button type='submit' >提交</button>
                 </form>
                 
             </div>
         );
+    }
+    initCheckboxState() {
+        let length = skillList.length;
+        let checkboxState = [];
+        for(let i = 0;i<length;i++){
+            checkboxState.push({isChecked:false,isDisabled:false});
+        }
+        return checkboxState;
+    }
+    handleCheckChange(index) {
+       this.state.checkboxState[index].isChecked = !this.state.checkboxState[index].isChecked;
+       if(this.state.checkboxState[index].isChecked){
+           this.remainCheck--;
+           if(this.remainCheck == 0){
+               this.state.checkboxState.map((item,index) => {if(!item.isChecked){item.isDisabled = true}});
+               this.forceUpdate();
+           }
+       }else{
+           this.remainCheck++;
+           if(this.remainCheck == 1){
+               this.state.checkboxState.map((item,index) => {item.isDisabled = false});
+               this.forceUpdate();
+           }
+       }
+
+        
+        console.log(this.remainCheck);
     }
     handleSubmit(e) {
         e.preventDefault();
@@ -59,13 +88,17 @@ class DaRenForm extends Page {
             }
 
     }
+    componentDidMount() {
+        console.log(this.remainCheck);
+    }
+    
 }
 
 const CheckBox = (props) => {
-    let { id, text, value } = props.data
+   
     return (<div className="daren-check">
-        <input name='skill' id={id} type='checkbox' hidden={true} value={value}/>
-        <label htmlFor={id} >{text}</label>
+        <input onChange={props.changeHook} name='skill' id={'inputId'+props.index} type='checkbox' hidden={true} value={props.text} disabled={props.isDisable}/>
+        <label htmlFor={'inputId'+props.index} >{props.text}</label>
     </div>)
 }
 

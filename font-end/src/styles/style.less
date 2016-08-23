@@ -963,6 +963,7 @@
             padding-left:180*@px;
             line-height: @px*90;
             height: @px*90;
+            background-color: #fff;
         }
     }
     .skill-form{
@@ -988,8 +989,13 @@
                 float: left;
             }
             input:checked + label{
-                color: @app-green;
+                background-color: @app-green;
+                color: #fff;
                 border-color: @app-green; 
+            }
+            input:disabled + label{
+                color: #e3e3e3;
+                border-color: #e3e3e3;
             }
         }
     }
