@@ -11,7 +11,7 @@ import ArticleDetail from './pages/article-detail-page';
 import Newhand from './pages/new-hand';
 import MyAnswer from './pages/my-answer';
 import KeepFit from './pages/keep-fit';
-//import Topic from './pages/topic';
+import DarenList from './pages/daren-list';
 //import SlickCmp from './pages/codePage';
 
 require('./styles/index.less');
@@ -23,7 +23,7 @@ class AppRoutes  extends React.Component {
         return (
             <Router history={hashHistory}>
                 <Route path='/' component={LayoutCmp}>
-                	<IndexRoute component={KeepFit} />
+                	<IndexRoute component={DarenList} />
                     <Route path='home' component={Home} />
                 	<Route path='daren' component={DaRen} />
                 	<Route path='discover' component={Discover} />
@@ -33,6 +33,7 @@ class AppRoutes  extends React.Component {
                     <Route path='new-hand' component={Newhand} />
                     <Route path='my-answer' component={MyAnswer} />
                     <Route path='keep-fit' component={KeepFit} />
+                    <Route path='daren-list' component={DarenList} />
                 </Route>
             </Router>
             )

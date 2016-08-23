@@ -107,5 +107,17 @@ const keepFitArticleList = [
 	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250}
 ];
 
+const daRenList =[
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'},
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'},
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'},
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'},
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'},
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'},
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'},
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'},
+	{avater:'./images/small-pic.png',name:'程乃进',skill:['普拉提','哑铃','跑步机'],lable:'五年健身经验',brive:'兔子的身体健康造成很大影响：催吐时胃液会逆流，腐蚀食道和牙齿，造成沙哑嗓和烂牙，反复催吐会让吸收和消化系统崩溃；催吐时会将体液一同吐出，导致体内电解质失衡，如低钾血症等，严重者可致身亡。',machine:'普拉提'}
+]
+
 export { indexBannerList, indexQuestionList, darenBannerList, darenListData, messageListData,
-newhandListData, keepFitArticleList };
+newhandListData, keepFitArticleList, daRenList };

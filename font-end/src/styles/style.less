@@ -897,3 +897,44 @@
        }
     }
 }
+
+//达人列表
+
+.daren-list-page{
+
+    .item{
+        min-height: @px*220;
+        padding: @px*10 @px*20 @px*30;
+        border-bottom: 1px solid #e3e3e3;
+        .avater{
+            padding-right: @px*35;
+            padding-top:@px*20;
+            img{
+                display: block;
+                width: @px*100;
+                height: @px*100;
+                border-radius: 50%; 
+            }
+        }
+        .skill{
+            color: #666;
+            padding:@px*10 0 ;
+            .font(26);
+            .lable{
+                border: 1px solid @app-red;
+                padding:10*@px;
+                line-height: 35*@px;
+                margin-left: 10*@px;
+                color: @app-red;
+                border-radius: 4px;
+                .font(26);
+
+            }
+        }
+        .brive{
+            color: #999;
+            .font(28);
+            line-height: 1.4;
+        }
+    }
+}
