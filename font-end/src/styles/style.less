@@ -938,3 +938,59 @@
         }
     }
 }
+
+//达人信息提交
+
+.daren-form-page{
+    .form-group{
+        line-height: @px*90;
+        position: relative;
+        
+        label{
+            position: absolute;
+            color: #666;
+            .font(32);
+            width: @px*180;
+            left: 0;
+            top:0;
+            text-align: right;
+            padding-right: @px*40;
+        }
+        input,select{
+            display: block;
+            color: #2c2c2c;
+            .font(30);
+            padding-left:180*@px;
+            line-height: @px*90;
+            height: @px*90;
+        }
+    }
+    .skill-form{
+        padding: @px*20 @px*30 @px*20 @px*80;
+        .tip{
+            line-height: 50*@px;
+            .font(32);
+            color: #666;
+            span{
+                color:#999;
+                .font(28);
+            } 
+        }
+        .daren-check{
+            label{
+                line-height: @px*40;
+                padding:10*@px;
+                color: #666;
+                border: 1px solid #666;
+                border-radius: 4px;
+                margin-right: @px*30;
+                margin-top: @px*30;
+                float: left;
+            }
+            input:checked + label{
+                color: @app-green;
+                border-color: @app-green; 
+            }
+        }
+    }
+}

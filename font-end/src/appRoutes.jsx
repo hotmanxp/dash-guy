@@ -12,7 +12,7 @@ import Newhand from './pages/new-hand';
 import MyAnswer from './pages/my-answer';
 import KeepFit from './pages/keep-fit';
 import DarenList from './pages/daren-list';
-//import SlickCmp from './pages/codePage';
+import DaRenForm from './pages/becomeDaren-form';
 
 require('./styles/index.less');
 
@@ -23,7 +23,7 @@ class AppRoutes  extends React.Component {
         return (
             <Router history={hashHistory}>
                 <Route path='/' component={LayoutCmp}>
-                	<IndexRoute component={DarenList} />
+                	<IndexRoute component={DaRenForm} />
                     <Route path='home' component={Home} />
                 	<Route path='daren' component={DaRen} />
                 	<Route path='discover' component={Discover} />
