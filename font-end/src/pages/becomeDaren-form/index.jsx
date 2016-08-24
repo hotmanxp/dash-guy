@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import Page from '../single.page.jsx'
+import Page from '../single.page.jsx';
+import {Text1, Text2} from './textarea';
+import {Slider, WingBlank, WhiteSpace, Uploader} from 'antd-mobile';
 
 
 const skillList =[
@@ -11,7 +13,7 @@ class DaRenForm extends Page {
     constructor(props) {
         super(props);
         this.remainCheck = 3;
-        this.state = {checkboxState:this.initCheckboxState()};
+        this.state = {checkboxState:this.initCheckboxState(),priceState:{min:1,max:10},images:[]};
     }
     render() {
         return (
@@ -42,11 +44,27 @@ class DaRenForm extends Page {
                             {skillList.map((item,index) => (<CheckBox changeHook={() => {this.handleCheckChange(index)}} isDisable={this.state.checkboxState[index].isDisabled} text={item} index={index} key={index+'skillKey'}/>))}
                         </div>
                     </div>
-                    <div className="textarea">
-                        <div className="title">一句话介绍自己</div>
-                        <textarea name="introduce" id="" cols="15" rows="2" maxLength='20'></textarea>
+                    <Text1 />
+                    <Text2 />
+                    <div className="section price-part">
+                        <input hidden={true} value={this.state.priceState.min} name='minPrice' />
+                        <input hidden={true} value={this.state.priceState.max} name='maxPrice' />
+                        <p>回答定价: <span ref='minPrice'>{this.state.priceState.min}</span> ~ <span ref='maxPrice'>{this.state.priceState.max}</span> </p>
+                        <WingBlank size={20}>
+                            
+                            <WhiteSpace />
+                            <Slider range defaultValue={[1, 10]} onAfterChange = {::this.handlePriceChange} />
+                        </WingBlank>
                     </div>
-                    <button type='submit' >提交</button>
+                    <div className="section image-upload">
+                        <p className='tips'>上传图片<span>(至少上传4张作为相册图片)</span></p>
+                        <Uploader files={this.state.images} onChange={::this.handleImageChange} />
+                    </div>
+                    
+                    
+                    
+                    <button type='submit' className='submit-btn' >提交</button>
+                   
                 </form>
                 
             </div>
@@ -77,11 +95,18 @@ class DaRenForm extends Page {
        }
 
         
-        console.log(this.remainCheck);
+       
+    }
+    handlePriceChange(value) {
+       this.setState({priceState:{min:value[0],max:value[1]}});
+    }
+    handleImageChange(images) {
+         this.setState({images,});
     }
     handleSubmit(e) {
         e.preventDefault();
         let formData = new FormData(document.getElementById('daren-form'));
+        formData.append('images',this.state.images);
         let form2 = JSON.stringify(formData);
         for (var pair of formData.entries()) {
             console.log(pair[0]+ ', ' + pair[1]); 
@@ -89,7 +114,7 @@ class DaRenForm extends Page {
 
     }
     componentDidMount() {
-        console.log(this.remainCheck);
+      
     }
     
 }

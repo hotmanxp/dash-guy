@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Header extends React.Component {
     constructor(props) {
@@ -18,7 +19,7 @@ class Header extends React.Component {
 		        		<span>元</span>
 		        	</div>
     			</div>} 
-    			else {return <div><button className='btn'>成为达人</button></div> 
+    			else {return <div><Link to='daren-form'><button className='btn' >成为达人</button></Link></div> 
     		} 
     	
     })();

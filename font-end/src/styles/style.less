@@ -950,24 +950,24 @@
             position: absolute;
             color: #666;
             .font(32);
-            width: @px*180;
+            width: @px*150;
             left: 0;
             top:0;
-            text-align: right;
-            padding-right: @px*40;
+            text-align: left;
+            padding-left: @px*35;
         }
         input,select{
             display: block;
             color: #2c2c2c;
             .font(30);
-            padding-left:180*@px;
+            padding-left:150*@px;
             line-height: @px*90;
             height: @px*90;
             background-color: #fff;
         }
     }
     .skill-form{
-        padding: @px*20 @px*30 @px*20 @px*80;
+        padding: @px*20 @px*35;
         .tip{
             line-height: 50*@px;
             .font(32);
@@ -998,5 +998,36 @@
                 border-color: #e3e3e3;
             }
         }
+       
+    }
+     .price-part{
+            padding-bottom:@px*40;
+            p{
+                padding-left: @px*35;
+                color:#666;
+                .font(32);
+            }
+        }
+    .image-upload{
+        .tips{
+            .font(32);
+            line-height: @px*50;
+            color: #666;
+            span{
+                color: #999;
+                .font(28);
+            }
+        }
+    }
+    .submit-btn{
+        display: block;
+        width: @px*690;
+        background-color: @app-green;
+        .font(36);
+        color: #fff;
+        line-height: @px*88;
+        margin:@px*60 auto;
+        border: none;
+        border-radius: 8px;
     }
 }

@@ -10,9 +10,7 @@
     "transform-class-properties",
     [
       "antd",
-      {
-        "style": true
-      }
+      { "style": true, "libraryName": "antd-mobile","libraryDirectory": "lib" }
     ]
   ]
 }

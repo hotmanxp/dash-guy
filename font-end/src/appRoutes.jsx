@@ -12,9 +12,16 @@ import Newhand from './pages/new-hand';
 import MyAnswer from './pages/my-answer';
 import KeepFit from './pages/keep-fit';
 import DarenList from './pages/daren-list';
-import DaRenForm from './pages/becomeDaren-form';
+
 
 require('./styles/index.less');
+
+
+const DaRenForm = (nextState, callback) =>{
+                   
+                    require.ensure( [ ], (require) => {
+                        callback(null, require('./pages/becomeDaren-form').default)
+                    }) };
 
 
 class AppRoutes  extends React.Component {
@@ -23,7 +30,7 @@ class AppRoutes  extends React.Component {
         return (
             <Router history={hashHistory}>
                 <Route path='/' component={LayoutCmp}>
-                	<IndexRoute component={DaRenForm} />
+                	<IndexRoute component={Home} />
                     <Route path='home' component={Home} />
                 	<Route path='daren' component={DaRen} />
                 	<Route path='discover' component={Discover} />
@@ -34,6 +41,7 @@ class AppRoutes  extends React.Component {
                     <Route path='my-answer' component={MyAnswer} />
                     <Route path='keep-fit' component={KeepFit} />
                     <Route path='daren-list' component={DarenList} />
+                    <Route path='daren-form' getComponent={DaRenForm} />
                 </Route>
             </Router>
             )
