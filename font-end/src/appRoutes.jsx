@@ -31,13 +31,13 @@ class AppRoutes  extends React.Component {
         return (
             <Router history={hashHistory}>
                 <Route path='/' component={LayoutCmp}>
-                	<IndexRoute component={ArticleDetail} />
+                	<IndexRoute component={Home} />
                     <Route path='home' component={Home} />
                 	<Route path='daren' component={DaRen} />
                 	<Route path='discover' component={Discover} />
                 	<Route path='me' component={Me} />
-                    <Route path='question-detail' component={QuestionDetailPage} />
-                    <Route path='article-detail' component={ArticleDetail} />
+                    <Route path='question-detail/:id' component={QuestionDetailPage} />
+                    <Route path='article-detail/:id' component={ArticleDetail} />
                     <Route path='new-hand' component={Newhand} />
                     <Route path='my-answer' component={MyAnswer} />
                     <Route path='keep-fit' component={KeepFit} />

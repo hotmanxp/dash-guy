@@ -25,7 +25,7 @@ class MyAnswer extends Page {
     		case ('rejected'):{contentList = this.data.rejectedList} break; 
     	}
         return <div className='app-body no-menu has-tab my-answer-page'>
-        	<Tab />
+        	<Tab handleTapchange={() => {}} />
         	<Content data = {contentList} typeName={currentTabtype} />
         	<DocumentTitle title='我回答的问题' ></DocumentTitle>
         </div>;

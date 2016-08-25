@@ -91,20 +91,20 @@ const messageListData = [
 ]
 
 const newhandListData = [
-{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'},
-{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'},
-{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'},
-{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'},
-{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png'}
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png',link:'/article-detail/123'},
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png',link:'/article-detail/123'},
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png',link:'/article-detail/123'},
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png',link:'/article-detail/123'},
+{title:'怎么样练就六块大大的腹肌？',imgSrc:'images/small-pic.png',link:'/article-detail/123'}
 ]
 
 const keepFitArticleList = [
-	{title:'怎么样练就六块大大的腹肌练就六块大练就六块大?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
-	{title:'怎么样练就六块大大的腹肌练就六块大练就六块大?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
-	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
-	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
-	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250},
-	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250}
+	{title:'怎么样练就六块大大的腹肌练就六块大练就六块大?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250,link:'/article-detail/123'},
+	{title:'怎么样练就六块大大的腹肌练就六块大练就六块大?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250,link:'/article-detail/123'},
+	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250,link:'/article-detail/123'},
+	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250,link:'/article-detail/123'},
+	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250,link:'/article-detail/123'},
+	{title:'怎么样练就六块大大的腹肌?',avator:'./images/small-pic.png',thumb:'./images/small-pic.png',author:'蒋俊伟',zan:115,comments:2250,link:'/article-detail/123'}
 ];
 
 const daRenList =[
