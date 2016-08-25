@@ -3,7 +3,7 @@ import React from 'react';
 var menus = [
 {icon:'wen',color:'#a05aba',title:'我问的问题',size:30},
 {icon:'chakan1zhuanhuan',color:'#67b3e7',title:'我揭开的答案'},
-{icon:'yqfhuida',color:'#eb523c',title:'我回答的问题'},
+{icon:'bangzhu',color:'#eb523c',title:'我回答的问题'},
 {icon:'yqfhuida',color:'#f4c600',title:'帮助'},
 {icon:'zaixiankefu',color:'#11cd6e',title:'在线客服'},
 {icon:'kefu',color:'#00bb9c',title:'投书建议',size:22}
