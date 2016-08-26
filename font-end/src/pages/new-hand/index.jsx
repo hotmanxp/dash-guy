@@ -3,6 +3,7 @@ import Page from '../single.page';
 import appState from '../../stores/app.state';
 import NewhandArticle from '../../stores/newHand.model';
 import { observer } from 'mobx-react';
+import { Link } from 'react-router';
 
 class Newhand extends Page {
     constructor(props) {
@@ -27,11 +28,11 @@ class Newhand extends Page {
     }
 }
 
-const Item = (props) => (<div className='list display-flex align-items-center'>
+const Item = (props) => (<Link to={props.data.link} className='list display-flex align-items-center'>
 	<div className='flex-1 article-list-title'>{props.data.title}</div>
 	<div className='avater'>
 		<img src={props.data.imgSrc} />
 	</div>
-</div>)
+</Link>)
 
 export default Newhand;

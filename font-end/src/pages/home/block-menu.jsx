@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 
 var menuData = [{
-	text:'新手入门',color:'#fd5b63',link:''},
-	{text:'健身攻略',color:'#56ace4',link:''},
-	{text:'成为达人',color:'#2bd798',link:''}]
+	text:'新手入门',color:'#fd5b63',link:'/new-hand'},
+	{text:'健身攻略',color:'#56ace4',link:'/keep-fit'},
+	{text:'成为达人',color:'#2bd798',link:'/daren-form'}]
 class BlockMenu extends React.Component {
     constructor(props) {
         super(props);

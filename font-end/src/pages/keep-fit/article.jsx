@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router';
 
 class Article extends Component {
     render() {
@@ -15,7 +16,7 @@ class Article extends Component {
     }
 }
 
-const Item = (props) => (<div className='item display-flex align-items-center'>
+const Item = (props) => (<Link to={props.data.link} className='item display-flex align-items-center'>
     <div className="flex-1 info">
         <div className="article-list-title">{props.data.title}</div>
         <div className="display-flex align-items-center info-part">
@@ -35,5 +36,5 @@ const Item = (props) => (<div className='item display-flex align-items-center'>
     <div className="thumb">
         <img src={props.data.thumb} className='pic' />
     </div>
-</div>);
+</Link>);
 export default Article;
