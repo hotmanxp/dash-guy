@@ -4,6 +4,7 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
+
         "**/.DS_Store": true,
         "**/*.map":true,
         "**/*.js": {
@@ -13,4 +14,7 @@
     "javascript.validate.enable": false,
     "eslint.enable": true
     
-}
+
+  
+    }
+
