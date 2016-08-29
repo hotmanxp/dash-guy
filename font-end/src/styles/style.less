@@ -1032,3 +1032,76 @@
         border-radius: 8px;
     }
 }
+.search-page{
+    .keyword{
+        color: @main-cl;
+    }
+     .title{
+            color: #333;
+            .font(30);
+            line-height: @px*74;
+            padding: 0 @px*20; 
+        }
+    .more{
+         color: @app-green;
+            .font(30);
+            line-height: @px*74;
+            padding: 0 @px*20;
+            border-top: 1px solid #e3e3e3;
+    }
+    .list-item{
+        border-top: 1px solid #e3e3e3;
+        padding: @px*20;
+    }
+    .quest-list{
+       .list-item{
+           border-top: 1px solid #e3e3e3;
+           padding: @px*20;
+           .header{
+               .font(32);
+           }
+           .answer{
+               .font(28);
+               color: #999;
+           }
+       }
+    }
+    .article-list{
+        .header{
+             .font(32);
+             color: #333;
+        }
+        .brife{
+            .font(28);
+            color: #999;
+            overflow: hidden;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
+    }
+    .daren-list{
+        .avator{
+            img{
+                display: block;
+                width: @px*80;
+                height: @px*80;
+                border-radius: 50%; 
+            }
+            margin-right: @px*20;
+            
+        }
+        .name-part{
+            .font(32);
+            color: #999;
+            .name{
+                color: #333;
+            }
+        }
+        .info-part{
+            .font(28);
+            color: #999;
+        }
+    }
+}
