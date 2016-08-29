@@ -13,6 +13,7 @@ import MyAnswer from './pages/my-answer';
 import KeepFit from './pages/keep-fit';
 import DarenList from './pages/daren-list';
 import Refresh from './pages/codePage/refresh';
+import SerchPage from './pages/search-page';
 
 
 require('./styles/index.less');
@@ -31,7 +32,7 @@ class AppRoutes  extends React.Component {
         return (
             <Router history={hashHistory}>
                 <Route path='/' component={LayoutCmp}>
-                	<IndexRoute component={Home} />
+                	<IndexRoute component={SerchPage} />
                     <Route path='home' component={Home} />
                 	<Route path='daren' component={DaRen} />
                 	<Route path='discover' component={Discover} />
