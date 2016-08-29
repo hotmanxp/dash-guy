@@ -5,7 +5,7 @@ var menuData = [{title:'瑜伽',cssName:'yujia',link:'',color:'#ee4b3d'},
 {title:'器材',cssName:'qicai',link:'',color:'#16d173'},
 {title:'动感单车',cssName:'danche',link:'',color:'#f4ca00'},
 {title:'游泳',cssName:'youyong',link:'',color:'#42b5fe'},
-{title:'全部',cssName:'quanbu',link:'',color:'#24d69a'}
+{title:'全部',cssName:'quanbu',link:'/search',color:'#24d69a'}
 ];
 
 class SortMenus extends React.Component {
