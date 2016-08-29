@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import FindKeyword from '../../components/findKeyword';
 
 class Result extends Component {
     constructor(props) {
@@ -18,7 +19,7 @@ class Result extends Component {
 const QuestResult = (props) => ((props.data.length>0)&&<div className="quest-list section">
     <div className="title">问题</div>
     {props.data.map((item,index) =>(<div className='list-item' key={index+'questKey'}>
-        <div className="header">{item.title}</div>
+        <div className="header">{<FindKeyword keyword='仰卧起座' strings={item.title} />}</div>
         <div className="answer">
             <span>答主：</span>
             <span className="name">{item.answer.name}</span>
