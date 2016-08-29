@@ -17,7 +17,6 @@ class FindKeyword extends Component {
     }
     
     componentWillMount() {
-        console.log(this.strings);
         let Reg = new RegExp('('+this.keyword+')','g');
         this.replaceSring = this.strings.replace(Reg,'<span class="keywords" >$1</span>')
        
